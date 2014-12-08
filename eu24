@@ -1,0 +1,21 @@
+goal: 1.000.000 th
+
+{0,1,2,3,4,5,6,7,8,9}
+
+9! 362.880  => 1Mth is 274.240 th number in 3rd package => 1st number = 2
+    remaining numbers: {0,1,3,4,5,6,7,8,9}
+8!  40.320  => 1Mth is  32.320 th number in 7th package => 2nd number = 7
+    remaining numbers: {0,1,3,4,5,6,8,9}
+7!   5.040  => 1Mth is   2.080 th number in 7th package => 3rd number = 8
+    remaining numbers: {0,1,3,4,5,6,9}
+6!     720  => 1Mth is     640 th number in 3rd package => 4th number = 3
+    remaining numbers: {0,1,4,5,6,9}
+5!     120  => 1Mth is      40 th number in 6th package => 5th number = 9
+    remaining numbers: {0,1,4,5,6}
+4!      24  => 1Mth is      16 th number in 2nd package => 6th number = 1
+    remaining numbers: {0,4,5,6}
+3!       6  => 1Mth is       4 th number in 3rd package => 7th number = 5
+    remaining numbers: {0,4,6}
+2!       2  => 1Mth is       2 th number in 2nd package             460
+1!       1
+
