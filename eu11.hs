@@ -9,7 +9,8 @@ main = do
     let resultVer = maximum $ map prodHorLine $ transpose intGrid
     let resultDia1 = dia intGrid
     let resultDia2 = dia $ map reverse intGrid
-    putStrLn $ show $ [resultHor, resultVer, resultDia1, resultDia2]
+--    print $ [resultHor, resultVer, resultDia1, resultDia2]
+    print $ maximum [resultHor, resultVer, resultDia1, resultDia2]
 
 prodHori grid = maximum $ map prodHorLine grid
 

@@ -1,12 +1,13 @@
-import System.IO
-import Data.Char
+import System.IO (readFile)
+import Data.Char (digitToInt)
 
 main = do
-    content <- readFile "input"
-    let stream = map digitToInt $ filter (/= '\n') content
-    let result = maximum $ calculate stream
-    putStrLn $ show result
+    content <- readFile "eu08.input"
+    let numbers = map digitToInt $ filter (/= '\n') content
+    let result = maximum $ calculate numbers
+    print $ result
 
 calculate :: [Int] -> [Int]
-calculate (_:_:_:_:[]) = []
-calculate (a:b:c:d:e:xs) = (a*b*c*d*e) : calculate (b:c:d:e:xs)
+calculate l
+    | length l < 13 = []
+    | otherwise = (product $ take 13 l) : calculate (tail l)

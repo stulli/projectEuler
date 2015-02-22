@@ -1,9 +1,7 @@
-import System.IO
-import Data.Char
+import Primes (primes)
 
 main = do
-    content <- readFile "primes1.txt"
-    let primes = map read $ words content
-    let result = sum primes
-    putStrLn $ show result
+    let primes' = takeWhile (<2000000) primes
+    let result = sum primes'
+    print result
 
