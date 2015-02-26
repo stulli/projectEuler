@@ -23,5 +23,5 @@ primfaktoren' x (y:ys)
     | otherwise = primfaktoren' x ys
 
 -- list all divisors of x
--- maybe not very fast
+-- maybe not very fast, better use allDivisors from Divisors module
 divisors x = nub $ map product $ subsequences $ primfaktoren x 

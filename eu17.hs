@@ -46,3 +46,6 @@ t x
   | x < 900 = t 8 ++ "hundredand" ++ (t $ mod x 800)
   | x < 1000 = t 9 ++ "hundredand" ++ (t $ mod x 900)
   | x == 1000 = "onethousand"
+
+main :: IO ()
+main = print $ length $ concatMap t [1..1000]

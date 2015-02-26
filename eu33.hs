@@ -8,3 +8,6 @@ stupid (n1:n2:_) (d1:d2:_)
     | d1 == d2 = 77777
     | d2 /= '0' && (d2 == n1 || d1 == n2) = read $ [n1] ++ "%" ++ [d2]
     | otherwise = 999999
+
+main :: IO ()
+main = print f

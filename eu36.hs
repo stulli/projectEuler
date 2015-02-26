@@ -9,3 +9,6 @@ base2 n
     | otherwise = base2 (n `div` 2) ++ "0"
 
 f = sum $ filter (\x -> isPalin x && (isPalin $ base2 x)) [1..1000000]
+
+main :: IO ()
+main = print f

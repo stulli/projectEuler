@@ -1,6 +1,5 @@
-import Data.List
-f = length $ nub $ permutations $ replicate 10 0 ++ replicate 10 1
-main = putStrLn $ show f
-eqPerms [] = [[]]
-eqPerms xs = [x:xt | x <- nub xs, xt <- eqPerms $ delete x xs]
+import Factorial
 
+num = 20
+
+main = print $ (round (fac (num * 2) / (fac num * fac num)) :: Integer)

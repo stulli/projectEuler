@@ -1,0 +1,1 @@
+for i in {1901..2000}; do; cal -y $i | awk '{print substr($0,19,2) "\n" substr($0,42,2) "\n" substr($0,65,2) }' | grep ' 1$'; done | wc -l
