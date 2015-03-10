@@ -25,3 +25,7 @@ primfaktoren' x (y:ys)
 -- list all divisors of x
 -- maybe not very fast, better use allDivisors from Divisors module
 divisors x = nub $ map product $ subsequences $ primfaktoren x 
+
+-- get all circular primes of a given prime (eu 35)
+--circularPrimes :: Int -> [Int]
+--circularPrimes p = map (\x -> read x::Int) $ concat $ [ [x] | x <- show p ]
