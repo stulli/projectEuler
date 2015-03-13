@@ -2,6 +2,9 @@ module Primes (primes, primfaktoren, divisors) where
 
 import Data.List (subsequences, nub)
 
+-- checks if x is a prime number
+isPrime x = undefined
+
 -- all prime numbers
 primes = 2:3:[x | x <- [5,7..], primeTest x (isqrt x) (tail primes)]
  
