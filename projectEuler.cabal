@@ -20,6 +20,8 @@ library
   exposed-modules:     Primes, Triangle, Factorial, Divisors, Pandigital
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.7 && <4.8, data-ordlist
+  build-depends:        base >=4.7 && <4.8,
+                        data-ordlist,
+                        split
   -- hs-source-dirs:      
   default-language:    Haskell2010
